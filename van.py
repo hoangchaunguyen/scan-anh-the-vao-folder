@@ -84,7 +84,7 @@ def export_images(excel_file_path, output_folder, scale_factor, wait_time, log_c
         log("🔓 Đã mở file Excel thành công")
         
         # Xác định hàng cuối cùng có dữ liệu
-        last_row = sheet.Cells(sheet.Rows.Count, 1).End(win32.constants.xlUp).Row
+        last_row = sheet.Cells(sheet.Rows.Count, 1).End(-4162).Row  # xlUp = -4162, last_row = sheet.Cells(sheet.Rows.Count, 1).End(win32.constants.xlUp).Row
         log(f"🔢 Tổng số hàng dữ liệu: {last_row - 1} (từ hàng 2 đến {last_row})")
         
         # Lấy tất cả hình ảnh trong sheet
@@ -354,4 +354,5 @@ if __name__ == "__main__":
     elapsed_time = time.time() - start_time
     print("\n" + "=" * 50)
     print(f"HOÀN TẤT SAU {elapsed_time:.2f} GIÂY")
+
     print("=" * 50)
