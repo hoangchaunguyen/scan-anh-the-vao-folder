@@ -77,4 +77,5 @@ python ui.py
 - Nhật ký chứa thông tin hoạt động chi tiết
 
 ## Hỗ trợ
-Đối với sự cố hoặc yêu cầu tính năng mới, vui lòng liên hệ nhóm phát triển.
+Đối với sự cố hoặc yêu cầu tính năng mới, vui lòng liên hệ nhà phát triển.
+
